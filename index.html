@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潘耀锦 | 体验设计师、平面设计师</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        .hero-title {
+            font-size: 6rem;
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+        .section-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #E5E7EB;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -0.5rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold">潘耀锦</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-black transition-colors">关于我</a>
+                    <a href="#projects" class="text-gray-600 hover:text-black transition-colors">项目</a>
+                    <a href="#stats" class="text-gray-600 hover:text-black transition-colors">数据</a>
+                    <a href="#experience" class="text-gray-600 hover:text-black transition-colors">履历</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="hero-title font-bold mb-8">体验设计师<br>平面设计师</h1>
+            <p class="text-2xl text-gray-600 mb-12">设计爱好者 · 细节狂魔 · 效率革命推动者</p>
+            <div class="flex justify-center space-x-8">
+                <a href="mailto:721201829@qq.com" class="text-gray-600 hover:text-black transition-colors">
+                    <i class="fas fa-envelope text-3xl"></i>
+                </a>
+                <a href="https://weixin.qq.com" class="text-gray-600 hover:text-black transition-colors">
+                    <i class="fab fa-weixin text-3xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title font-bold mb-16">精选项目</h2>
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- 项目1 -->
+                <div class="project-card">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4">爱音乐App</h3>
+                            <p class="text-gray-600 mb-6">千万级用户音乐应用体验设计</p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• 主导整体UI/UX设计</li>
+                                <li>• 提升用户留存率30%</li>
+                                <li>• 优化用户操作流程</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="https://picsum.photos/600/400?random=2" alt="Project 1" class="rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                </div>
+                <!-- 项目2 -->
+                <div class="project-card">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4">合创汽车App</h3>
+                            <p class="text-gray-600 mb-6">智能汽车服务体验设计</p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>• 设计智能交互系统</li>
+                                <li>• 提升用户满意度25%</li>
+                                <li>• 优化服务流程</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="https://picsum.photos/600/400?random=3" alt="Project 2" class="rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section id="stats" class="py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title font-bold mb-16 text-center">项目成就</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="stat-number mb-4">1000万+</div>
+                    <p class="text-xl text-gray-600">用户覆盖</p>
+                </div>
+                <div class="text-center">
+                    <div class="stat-number mb-4">30%</div>
+                    <p class="text-xl text-gray-600">用户留存提升</p>
+                </div>
+                <div class="text-center">
+                    <div class="stat-number mb-4">25%</div>
+                    <p class="text-xl text-gray-600">满意度提升</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作履历 -->
+    <section id="experience" class="py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title font-bold mb-16">工作履历</h2>
+            <div class="space-y-12">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="pl-8">
+                        <h3 class="text-2xl font-bold mb-2">AI产品设计师</h3>
+                        <p class="text-gray-600 mb-2">Symmde / chathub</p>
+                        <p class="text-gray-500">2022 - 至今</p>
+                        <p class="text-gray-600 mt-4">负责AI产品的用户体验设计，推动产品创新和优化。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="pl-8">
+                        <h3 class="text-2xl font-bold mb-2">体验设计师</h3>
+                        <p class="text-gray-600 mb-2">爱音乐 / 爱听 / 合创汽车App</p>
+                        <p class="text-gray-500">2018 - 2022</p>
+                        <p class="text-gray-600 mt-4">负责千万级用户应用的体验设计，提升用户满意度和留存率。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-600">&copy; 2024 潘耀锦. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
