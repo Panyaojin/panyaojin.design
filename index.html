@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>潘耀锦 | 体验设计师、平面设计师</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- 网站图标 -->
-    <link rel="shortcut icon" href="/favicon.ico" />
-    
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -62,6 +62,25 @@
             border-radius: 50%;
             background-color: #000000;
         }
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            background-image: url('page1_bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
@@ -83,15 +102,16 @@
     </nav>
 
     <!-- 英雄区域 -->
-    <section class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
-        <div class="max-w-7xl mx-auto text-center">
+    <section class="hero-section flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="hero-overlay"></div>
+        <div class="hero-content max-w-7xl mx-auto text-center text-white">
             <h1 class="hero-title font-bold mb-8">体验设计师<br>平面设计师</h1>
-            <p class="text-2xl text-gray-600 mb-12">设计爱好者 · 细节狂魔 · 效率革命推动者</p>
+            <p class="text-2xl text-gray-200 mb-12">设计爱好者 · 细节狂魔 · 效率革命推动者</p>
             <div class="flex justify-center space-x-8">
-                <a href="mailto:721201829@qq.com" class="text-gray-600 hover:text-black transition-colors">
+                <a href="mailto:721201829@qq.com" class="text-gray-200 hover:text-white transition-colors">
                     <i class="fas fa-envelope text-3xl"></i>
                 </a>
-                <a href="https://weixin.qq.com" class="text-gray-600 hover:text-black transition-colors">
+                <a href="https://weixin.qq.com" class="text-gray-200 hover:text-white transition-colors">
                     <i class="fab fa-weixin text-3xl"></i>
                 </a>
             </div>
@@ -192,7 +212,10 @@
     <!-- 页脚 -->
     <footer class="bg-gray-50 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-gray-600">&copy; 2024 潘耀锦. All rights reserved.</p>
+            <p class="text-gray-600 mb-4">&copy; 2024 潘耀锦. All rights reserved.</p>
+            <a href="https://hits.sh/github.com/Panyaojin/panyaojin.github.io/">
+                <img alt="Hits" src="https://hits.sh/github.com/Panyaojin/panyaojin.github.io.svg"/>
+            </a>
         </div>
     </footer>
 
